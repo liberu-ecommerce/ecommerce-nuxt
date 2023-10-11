@@ -1,5 +1,8 @@
 # Liberu Ecommerce
 
+![Latest Stable Version](https://img.shields.io/github/release/liberu-ecommerce/ecommerce-nuxt.svg)
+[![CircleCI](https://circleci.com/gh/liberu-ui/ecommerce.svg?style=svg)](https://circleci.com/gh/liberu-ecommerce/ecommerce-nuxt)
+
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
