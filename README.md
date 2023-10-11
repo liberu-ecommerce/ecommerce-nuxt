@@ -1,9 +1,7 @@
 # Liberu Ecommerce
 
-[![CircleCI](https://circleci.com/gh/liberu-ecommerce/ecommerce-nuxt.svg?style=svg)](https://circleci.com/gh/liberu-ecommerce/ecommerce-nuxt)
-
 ![Latest Stable Version](https://img.shields.io/github/release/liberu-ecommerce/ecommerce-nuxt.svg)
-
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/liberu-ecommerce/ecommerce-nuxt/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/liberu-ecommerce/ecommerce-nuxt/tree/main)
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
