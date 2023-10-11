@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <slot />
+    <Footer />
   </v-app>
 </template>
 

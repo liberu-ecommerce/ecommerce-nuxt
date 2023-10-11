@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import { useExampleStore } from "~/store/exampleStore";
+import { useExampleStore } from '~/store/exampleStore';
 
 const exampleStore = useExampleStore();
 const appTitle = computed(() => exampleStore.getAppTitle);
@@ -13,6 +13,6 @@ const appTitle = computed(() => exampleStore.getAppTitle);
 
 <style scoped>
 .page-height {
-  min-height: 100vh;
+  min-height: 40vh;
 }
 </style>

@@ -3,26 +3,31 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     head: {
-      titleTemplate: "template",
+      titleTemplate: 'template',
       meta: [
-        { charset: "utf-8" },
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { hid: "description", name: "description", content: "" },
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: '' }
       ],
       link: [],
-      script: [],
-    },
+      script: []
+    }
   },
-  css: ["vuetify/lib/styles/main.sass"],
+  css: ['vuetify/lib/styles/main.sass'],
   build: {
-    transpile: ["vuetify"],
+    transpile: ['vuetify']
   },
   modules: [
     [
-      "@pinia/nuxt",
+      '@pinia/nuxt',
       {
-        autoImports: ["defineStore", ["defineStore", "definePiniaStore"]],
-      },
-    ],
+        autoImports: ['defineStore', ['defineStore', 'definePiniaStore']]
+      }
+    ]
   ],
+  vite: {
+    define: {
+      'process.env.DEBUG': false
+    }
+  }
 });
