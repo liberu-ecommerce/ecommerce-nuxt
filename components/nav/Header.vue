@@ -1,11 +1,11 @@
 <template>
   <div class="py-1">
     <v-row justify-lg="space-between" class="nav-container">
-      <v-col cols="6" class="d-flex align-center justify-start" lg="1">
+      <v-col cols="12" md="2" class="d-flex align-center justify-center justify-lg-start" lg="1">
         <div>Logo</div>
       </v-col>
 
-      <v-col cols="6" class="d-lg-none d-flex align-center justify-lg-end" lg="2">
+      <v-col cols="12" class="d-lg-none d-flex align-center justify-center justify-lg-end" lg="2">
         <div class="d-flex">
           <div class="d-flex">
             <p class="font-size-18">Account</p>
@@ -24,7 +24,7 @@
         </div>
       </v-col>
 
-      <v-col cols="12" lg="7" class="d-flex justify-center justify-lg-start">
+      <v-col cols="8" lg="7" class="d-flex justify-center justify-lg-start">
         <div class="d-flex align-center search-bar-width">
           <v-text-field
             prepend-inner-icon="mdi-magnify"
