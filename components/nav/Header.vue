@@ -1,7 +1,7 @@
 <template>
   <div class="py-1">
     <v-row justify-lg="space-between" class="nav-container">
-      <v-col cols="6" class="d-flex align-center justify-center" lg="1">
+      <v-col cols="6" class="d-flex align-center justify-start" lg="1">
         <div>Logo</div>
       </v-col>
 
