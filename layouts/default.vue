@@ -1,8 +1,8 @@
 <template>
   <v-app>
-    <Header />
+    <nav-top-header />
+    <nav-header />
     <slot />
-    <Footer />
   </v-app>
 </template>
 
