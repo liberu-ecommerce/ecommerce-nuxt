@@ -1,22 +1,22 @@
 <template>
-  <div>
+  <div class="container pt-8">
     <v-row class="footer-container">
-      <v-col>
-        <div>
-          <v-list density="compact">
-            <v-list-item v-for="(contact, i) in contactInfo" :key="i" :value="contact" color="primary">
-              <template v-slot:prepend>
-                <v-icon :icon="contact.icon"></v-icon>
-              </template>
-
-              <v-list-item-title>{{ contact.text }}</v-list-item-title>
-            </v-list-item>
-          </v-list>
+      <v-col cols="12" sm="6" md="3">
+        <div class="footer-text-color d-flex justify-center justify-md-start">
+          <ul class="foot-list-style">
+            <template v-for="(item, i) in contactInfo" :key="i">
+              <div class="d-flex my-2">
+                <v-icon :icon="item.icon"></v-icon>
+                <li class="px-4">{{ item.text }}</li>
+              </div>
+            </template>
+          </ul>
         </div>
       </v-col>
-      <v-col>
-        <div class="d-flex flex-column align-center">
-          <h3>Customer Service</h3>
+
+      <v-col cols="12" sm="6" md="3">
+        <div class="d-flex flex-column align-center align-md-center footer-text-color">
+          <h3 class="text-white">Customer Service</h3>
           <ul>
             <template v-for="(item, i) in servicesList" :key="i">
               <li>{{ item }}</li>
@@ -24,9 +24,10 @@
           </ul>
         </div>
       </v-col>
-      <v-col>
-        <div class="d-flex flex-column align-center">
-          <h3>Corporation</h3>
+
+      <v-col cols="12" sm="6" md="3">
+        <div class="d-flex flex-column align-center align-md-center footer-text-color">
+          <h3 class="text-white ml-n16">Corporation</h3>
           <ul>
             <template v-for="(item, i) in corporationList" :key="i">
               <li>{{ item }}</li>
@@ -34,9 +35,10 @@
           </ul>
         </div>
       </v-col>
-      <v-col>
-        <div class="d-flex flex-column align-center">
-          <h3>Why Choose Us</h3>
+
+      <v-col cols="12" sm="6" md="3">
+        <div class="d-flex flex-column align-center align-md-end footer-text-color">
+          <h3 class="text-white ml-n10">Why Choose Us</h3>
           <ul>
             <template v-for="(item, i) in whyUsList" :key="i">
               <li>{{ item }}</li>
@@ -46,14 +48,34 @@
       </v-col>
     </v-row>
 
-    <!-- <v-row>
-      <v-col>
-        <div></div>
+    <hr class="footer-divider mt-5" />
+    <v-row class="footer-container d-flex justify-space-between py-1">
+      <v-col class="pl-md-0">
+        <div>
+          <v-btn
+            color="white"
+            v-for="icon in socialMediaIcons"
+            :key="icon"
+            class=""
+            :icon="icon"
+            variant="text"
+          ></v-btn>
+        </div>
       </v-col>
-      <v-col>
-        <div></div>
+      <v-spacer></v-spacer>
+      <v-col class="d-flex justify-end pr-md-0">
+        <div>
+          <v-btn
+            color="white"
+            v-for="icon in socialMediaIcons"
+            :key="icon"
+            class=""
+            :icon="icon"
+            variant="text"
+          ></v-btn>
+        </div>
       </v-col>
-    </v-row> -->
+    </v-row>
   </div>
 </template>
 
@@ -64,6 +86,8 @@ const contactInfo = [
   { text: '+44-', icon: 'mdi-phone-outline' }
 ];
 
+const socialMediaIcons = ['mdi-facebook', 'mdi-twitter', 'mdi-linkedin', 'mdi-instagram'];
+
 const servicesList = ['My Account', 'Order History', 'FQA', 'Help Center'];
 const corporationList = ['About Us', 'Customer Service', 'Company', 'Advance Search', 'Investor Relations'];
 const whyUsList = ['Shopping Guid', 'Blog', 'Company', 'Investor Relations', 'Contact Us'];
@@ -71,7 +95,26 @@ const whyUsList = ['Shopping Guid', 'Blog', 'Company', 'Investor Relations', 'Co
 
 <style scoped>
 .footer-container {
-  max-width: 80%;
-  margin: 0 auto;
+  max-width: 80% !important;
+  margin: 0 auto !important;
+}
+
+.container {
+  background-color: #2e353b;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.footer-text-color {
+  color: #abafb1;
+}
+
+.footer-divider {
+  color: #eaedee;
+}
+
+.foot-list-style {
+  list-style-type: none;
 }
 </style>
