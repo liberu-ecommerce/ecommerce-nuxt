@@ -1,5 +1,5 @@
 <template>
-  <div class="page-height d-flex flex-column justify-center align-center">
+  <div class="container">
     <div class="text-center">{{ appTitle }}</div>
   </div>
 </template>
@@ -11,8 +11,4 @@ const exampleStore = useExampleStore();
 const appTitle = computed(() => exampleStore.getAppTitle);
 </script>
 
-<style scoped>
-.page-height {
-  min-height: 40vh;
-}
-</style>
+<style scoped></style>
