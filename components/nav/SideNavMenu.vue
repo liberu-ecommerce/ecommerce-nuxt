@@ -23,7 +23,7 @@
       </v-list>
     </v-card>
 
-    <v-menu open-on-click :activator="`#menu-activator-${activeMenuIndex}`" location="bottom">
+    <v-menu open-on-click :activator="`#menu-activator-${activeMenuIndex}`" location="end">
       <div class="ml-8">
         <nav-side-nav-sub-menu />
       </div>
