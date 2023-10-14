@@ -1,5 +1,5 @@
 <template>
-  <div class="container pt-8">
+  <div class="container-footer pt-8">
     <v-row class="footer-container">
       <v-col cols="12" sm="6" md="3">
         <div class="footer-text-color d-flex justify-center justify-md-start">
@@ -99,9 +99,9 @@ const whyUsList = ['Shopping Guid', 'Blog', 'Company', 'Investor Relations', 'Co
   margin: 0 auto !important;
 }
 
-.container {
+.container-footer {
   background-color: #2e353b;
-  position: absolute;
+  position: relative;
   bottom: 0px;
   left: 0px;
   right: 0px;
